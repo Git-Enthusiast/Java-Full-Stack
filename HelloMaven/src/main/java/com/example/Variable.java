@@ -12,5 +12,5 @@ public class Variable {
         System.out.println("Number: " + number);
         System.out.println("Value of Pi: " + pi);
     }
-    
+
 }
