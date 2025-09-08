@@ -99,9 +99,11 @@ class Student {
 public class VariablesTypes {
     public static void main(String[] args) {
         // 🔹 Local variable in Stack, points to String literal in String Pool
+        @SuppressWarnings("unused")
         String greeting = "Hello";          
 
         // 🔹 Creates 2 objects → one in Pool, one in Heap
+        @SuppressWarnings("unused")
         String temp = new String("Hi");     
 
         // 🔹 Object creation → stored in Heap

@@ -178,10 +178,13 @@ public class MemoryMaster {
         System.out.println("\n====== CASE 4: Static update via object ======");
 
         int local = 50; // Stack
+        System.out.println("Local variable: " + local);
         MemoryMaster obj = new MemoryMaster(101, 99.9); // Heap
 
         obj.print(); // prints old static value
-
+        // Suppress unused variable warning
+        @SuppressWarnings("unused")
+        int unused = local;
         // Update static value
         MemoryMaster.schoolName = "DEF School";
         obj.print(); // prints updated value
